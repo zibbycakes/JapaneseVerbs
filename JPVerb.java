@@ -30,7 +30,21 @@ public class JPVerb
 	{
 		teMap = new TreeMap<String[],String>();
 		
+		System.out.println("Made it inside initTe");
+
+		String[] test = new String[1];
+
+		test[0] = "test1";
+
+		System.out.println("Inb4 fail");
+
+		teMap.put(test, "test2");
+
+		System.out.println("Made it past the test");
+
 		teMap.put(new String[] {"u","tsu","ru"}, "tte");
+
+		System.out.println("Made it past first put in initTe");
 
 		teMap.put(new String[] {"mu","bu","ru"}, "nde");
 
